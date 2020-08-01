@@ -1,4 +1,4 @@
-name: AospExtended 7.3 GSI
+name: AICP 15.0 GSI
 
 on:
 #  release:
@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM: AospExtended_7.3_pdrGSI
+  ROM: AICP_15.0_pdrGSI
   TZ: America/Sao_Paulo
   MIR: bit
 jobs:
@@ -41,7 +41,7 @@ jobs:
        
        - name: Download Firmware & Generate GSI & Zip and Upload
          run:  |
-               sudo ./ErfanGSIs/url2GSI.sh https://api.aospextended.com/download/victara/q/51ec33e251453d4b1ba96969b5ef7827a66a7e62b4c9112a2236762f44802524652b97f151dbae63ce9d597e2d4f233db806cc21 Generic:AospExtended ROM
+               sudo ./ErfanGSIs/url2GSI.sh https://svwh.dl.sourceforge.net/project/kiam001-build-roms/Device%20Cedric%20%28Moto%20G5%29/android10/aicp_cedric_q-15.0-UNOFFICIAL-20200626.zip Generic:AICP
                mkdir final
                
                export date2=`date +%Y%m%d%H%M`
