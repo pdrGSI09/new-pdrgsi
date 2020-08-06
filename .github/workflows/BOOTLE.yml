@@ -41,7 +41,7 @@ jobs:
        
        - name: Download Firmware & Generate GSI & Zip and Upload
          run:  |
-               sudo ./ErfanGSIs/url2GSI.shhttps://ufpr.dl.sourceforge.net/project/bootleggersrom/builds/RMX1971/BootleggersROM-Queue4RMX1971.5.1-Stable-Shishufied-20200527-111857.zip:Bootleggers ROM
+               sudo ./ErfanGSIs/url2GSI.sh https://ufpr.dl.sourceforge.net/project/bootleggersrom/builds/RMX1971/BootleggersROM-Queue4RMX1971.5.1-Stable-Shishufied-20200527-111857.zip:Bootleggers ROM
                mkdir final
                
                export date2=`date +%Y%m%d%H%M`
